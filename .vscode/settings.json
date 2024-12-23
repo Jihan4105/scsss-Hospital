@@ -1,0 +1,18 @@
+{
+  "liveSassCompile.settings.formats": [
+    {
+      // expanded 스타일의 css로 컴파일 한다는 뜻...
+      "format": "expanded",
+      // 컴파일된 파일의 확장자는 .css로 하겠다는 뜻...
+      "extensionName": ".css",
+      // 컴파일된 파일의 경로를 상대경로로 아래와 같이 지정하겠다는 뜻...
+      "savePath": "/css"
+    }
+  ],
+  // scss 저장 시, 불필요한 map 파일 생성을 막겠다는 뜻...
+  "liveSassCompile.settings.generateMap": false,
+  //아래 지정한 곳에 있는 .scss 파일만 컴파일 하겠다는 뜻...
+  "liveSassCompile.settings.includeItems": [
+    "/style.scss"
+  ]
+ }
