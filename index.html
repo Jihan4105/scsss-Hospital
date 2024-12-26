@@ -8,6 +8,9 @@
   <!-- Box Icons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
+  <!-- Swiper -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
   <!-- My Style -->
    <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -167,8 +170,179 @@
   </section>
 
   <!-- Testimonials -->
-   
+  <section id="testimonials" class="swiper mySwiper">
+    <h2>What Our Patients Say</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci est sunt accusantium veniam nulla temporibus?</p>
+    <div class="swiper-wrapper">
+      <article class="swiper-slide">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur, eligendi minima cumque dolorem consectetur? Officia doloribus neque et in!</p>
+        <div class="patient">
+          <div class="avatar">
+            <img src="./assets/avatar1.jpg" alt="">
+          </div>
+          <div class="patient__details">
+            <h5>Mana Ama Mcbrown</h5>
+            <small>patient</small>
+          </div>
+        </div>
+      </article>
+      <article class="swiper-slide">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur, eligendi minima cumque dolorem consectetur? Officia doloribus neque et in!</p>
+        <div class="patient">
+          <div class="avatar">
+            <img src="./assets/avatar2.jpg" alt="">
+          </div>
+          <div class="patient__details">
+            <h5>John Doe</h5>
+            <small>patient</small>
+          </div>
+        </div>
+      </article>
+      <article class="swiper-slide">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur, eligendi minima cumque dolorem consectetur? Officia doloribus neque et in!</p>
+        <div class="patient">
+          <div class="avatar">
+            <img src="./assets/avatar3.jpg" alt="">
+          </div>
+          <div class="patient__details">
+            <h5>Chris Willson</h5>
+            <small>patient</small>
+          </div>
+        </div>
+      </article>
+      <article class="swiper-slide">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur, eligendi minima cumque dolorem consectetur? Officia doloribus neque et in!</p>
+        <div class="patient">
+          <div class="avatar">
+            <img src="./assets/avatar4.jpg" alt="">
+          </div>
+          <div class="patient__details">
+            <h5>Mohammad Abdul Alli</h5>
+            <small>patient</small>
+          </div>
+        </div>
+      </article>
+      <article class="swiper-slide">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur, eligendi minima cumque dolorem consectetur? Officia doloribus neque et in!</p>
+        <div class="patient">
+          <div class="avatar">
+            <img src="./assets/avatar5.jpg" alt="">
+          </div>
+          <div class="patient__details">
+            <h5>Frisk Chara</h5>
+            <small>patient</small>
+          </div>
+        </div>
+      </article>
+      <article class="swiper-slide">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur, eligendi minima cumque dolorem consectetur? Officia doloribus neque et in!</p>
+        <div class="patient">
+          <div class="avatar">
+            <img src="./assets/avatar6.jpg" alt="">
+          </div>
+          <div class="patient__details">
+            <h5>Annae Chalender</h5>
+            <small>patient</small>
+          </div>
+        </div>
+      </article>
+      <article class="swiper-slide">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut consequuntur, eligendi minima cumque dolorem consectetur? Officia doloribus neque et in!</p>
+        <div class="patient">
+          <div class="avatar">
+            <img src="./assets/avatar7.jpg" alt="">
+          </div>
+          <div class="patient__details">
+            <h5>Wittniy Column</h5>
+            <small>patient</small>
+          </div>
+        </div>
+      </article>
+    </div>
+    <div class="swiper-pagination"></div>
+  </section>
 
+  <!-- Appointment -->
+  <section id="appointment">
+    <div class="container">
+      <div class="info">
+        <h2>Get An Appointment</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, exercitationem nemo ad magnam officiis a quas eum id totam sint.</p>
+        <article>
+          <div class="info__icon">
+            <i class="bx bx-user"></i>
+          </div>
+          <div>
+            <h4>Experience Doctors</h4>
+            <small>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, dolore voluptatum accusamus quo dolor incidunt recusandae hic saepe quos rem?
+            </small>
+          </div>
+        </article>
+        <article>
+          <div class="info__icon">
+            <i class="bx bx-reflect-horizontal"></i>
+          </div>
+          <div>
+            <h4>Advanced Technology</h4>
+            <small>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, dolore voluptatum accusamus quo dolor incidunt recusandae hic saepe quos rem?
+            </small>
+          </div>
+        </article>
+        <article>
+          <div class="info__icon">
+            <i class="bx bx-first-aid"></i>
+          </div>
+          <div>
+            <h4>Emergency Care</h4>
+            <small>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, dolore voluptatum accusamus quo dolor incidunt recusandae hic saepe quos rem?
+            </small>
+          </div>
+        </article>
+      </div>
+      <form action="">
+        <div class="form__group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter Your Name" name="Patients' Name" required>
+        </div>
+        <div class="form__group">
+          <label for="phone">Phone</label>
+          <input type="text" id="phone" placeholder="Enter Your Phone Number" name="Phone Number" required>
+        </div>
+        <div class="form__group">
+          <label for="date">Date</label>
+          <input type="date" id="date" placeholder="Choose a Date" name="Date " required>
+        </div>
+        <div class="form__group">
+          <label for="department">Select Department</label>
+          <select name="department" id="department" required>
+            <option value="Deparment One">Department One</option>
+            <option value="Deparment Two">Department Two</option>
+            <option value="Deparment Three">Department Three</option>
+            <option value="Deparment Four">Department Four</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="doctor">Select Doctor</label>
+          <select name="doctor" id="doctor" required>
+            <option value="Doctor One">Doctor One</option>
+            <option value="Doctor Two">Doctor Two</option>
+            <option value="Doctor Three">Doctor Three</option>
+            <option value="Doctor Four">Doctor Four</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="message">message</label>
+          <textarea id="message" placeholder="Add a Message" name="message " required></textarea>
+        </div>
+        <input type="submit" value="Submit Request" class="btn-primary">
+      </form>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./main.js"></script>
 </body>
 </html>

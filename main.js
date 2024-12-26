@@ -16,3 +16,21 @@ function toggleMenu() {
 }
 
 openNavBtn.addEventListener("click", () => {toggleMenu()})
+
+let swiper = new Swiper(".mySwiper", {
+  slidesPerView :1,
+  spaceBetween: 30,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true
+  },
+  breakpoints : {
+    600: {
+      slidesPerView: 2
+    },
+    1024: {
+      slidesPerView: 3
+    }
+  }
+})
