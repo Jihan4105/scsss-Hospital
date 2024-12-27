@@ -109,7 +109,7 @@ nav h1, nav h2, nav h3, nav h4, nav h5 {
   color: #fff;
 }
 nav.window-scroll {
-  background-color: #fff;
+  background: #fff;
 }
 nav.window-scroll .container a {
   color: #0c031b;
@@ -120,7 +120,7 @@ nav.window-scroll .container a > h3 {
 nav.window-scroll .container a.btn {
   color: #fff;
 }
-nav.window-scroll .container #nav-button {
+nav.window-scroll .container #nav-btn {
   color: #0c031b;
 }
 nav .container {
@@ -442,5 +442,126 @@ header .container .header__content p {
 @media (max-width: 1024px) {
   .swiper .swipper-wrapper .swiper-slider {
     padding: 1.5rem;
+  }
+}
+#appointment .container {
+  display: grid;
+  grid-template-columns: 47% 47%;
+  gap: 6%;
+}
+#appointment .container .info p {
+  margin: 0.5rem 0.2rem;
+}
+#appointment .container .info article {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+#appointment .container .info small {
+  margin-top: 0.4rem;
+  display: block;
+}
+#appointment .container .info .info__icon {
+  background-color: #f72585;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 50%;
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  font-size: 1.2rem;
+}
+#appointment .container form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+#appointment .container form .form__group label {
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+  display: inline-block;
+  font-weight: 600;
+}
+#appointment .container form .form__group input, #appointment .container form .form__group textarea, #appointment .container form .form__group select {
+  background-color: #fff;
+  padding: 0.8rem 1rem;
+  display: block;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 0.4rem;
+  resize: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+@media (max-width: 600px) {
+  #appointment .container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  #appointment .container .info h2, #appointment .container .info p {
+    text-align: center;
+  }
+}
+footer {
+  background-color: #0c031b;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 6rem;
+  margin-top: 6rem;
+}
+footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  font-size: 0.8rem;
+}
+footer .container article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+footer .container article .footer__logo, footer .container article .gohome {
+  color: #fff;
+  font-weight: 800;
+}
+footer .container article a {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 400ms ease;
+}
+footer .container article a:hover {
+  color: #fff;
+}
+footer .container article > div {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+footer .container article > h3 {
+  color: #fff;
+}
+footer .container article .footer__socials {
+  gap: 1rem;
+  font-size: 1.1rem;
+}
+footer .copyright {
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  footer .container {
+    gap: 2.5rem;
+  }
+}
+@media (max-width: 600px) {
+  footer .container {
+    grid-template-columns: 1fr;
+  }
+  footer .container .btn-primary, footer .container .footer__socials {
+    margin: 0 auto;
   }
 }

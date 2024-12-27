@@ -34,3 +34,21 @@ let swiper = new Swiper(".mySwiper", {
     }
   }
 })
+
+
+//Close Navmenu
+if(window.innerWidth < 1024) {
+  document.querySelectorAll("#nav__items li a").forEach((navItem) => {
+    navItem.addEventListener("click", () => {
+      navContainer.classList.remove("show-nav-items")
+      openNavBtn.classList.remove("close")
+      icon.classList.add("bx-menu")
+      icon.classList.remove("bx-x")
+    })
+  })
+}
+
+//Change Navbar Styles on Scroll
+window.addEventListener("scroll", () => {
+  document.querySelector("nav").classList.toggle("window-scroll", window.scrollY > 0)
+})
